@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+<include file="db/changelog/20220821_user.xml" relativeToChangelogFile="false"/>
+<include file="db/changelog/20220821_role.xml" relativeToChangelogFile="false"/>
+<!--add new database table at here    -->
+
+    <changeSet id="insertData" author="admin">
+        <sqlFile path="db/changelog/insert-data.sql"/>
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,1 @@
+insert into user (created_user, created_date, name, active_status, budget, amount, description ) values ("namnv1", "2008-11-11", "namnv1", 1, 500, 1000, "this is test")

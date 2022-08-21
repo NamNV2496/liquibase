@@ -1,0 +1,11 @@
+spring:
+  liquibase:
+    change-log: classpath:db/changelog/changelog-master.xml
+    enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: 'jdbc:mysql://${MYSQL_HOST:localhost}:3306/db_example'
+    username: root
+    password: root
